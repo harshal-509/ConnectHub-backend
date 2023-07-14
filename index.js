@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(
     cors({
         credentials: true,
-        origin: "https://connecthub-frontend.onrender.com/",
+        origin: "https://connecthub-frontend.onrender.com",
     })
 );
 
