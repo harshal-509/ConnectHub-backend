@@ -18,15 +18,15 @@ cloudinary.config({
 });
 
 const app = express();
-app.use(express.json({limit: '50mb'}));
-app.use(express.urlencoded({limit: '50mb'}));
+app.use(express.json({ limit: "50mb" }));
+app.use(express.urlencoded({ limit: "50mb" }));
 //middlewares
 app.use(morgan("common"));
 app.use(cookieParser());
 app.use(
     cors({
         credentials: true,
-        origin: "http://localhost:3000",
+        origin: "https://connecthub-frontend.onrender.com/",
     })
 );
 
